@@ -1,0 +1,1 @@
+ALTER TABLE `agents` ADD `model_mode` text DEFAULT 'fast' NOT NULL;

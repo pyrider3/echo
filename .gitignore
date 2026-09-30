@@ -1,0 +1,68 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/.vinext/
+/out/
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# env files (can opt-in for committing if needed)
+.env*
+!.env.example
+!**/.env.example
+
+# vercel
+.vercel
+
+# typescript
+next-env.d.ts
+/dist/
+/.wrangler/
+/outputs/
+/work/
+/mobile-dist/
+/android/app/src/chord/assets/public/
+/output/*.apk
+/output/*.wav
+/output/*.zip
+/output/*.bin
+/output/*.png
+/*.apk
+/bridge/__pycache__/
+/bridge/**/__pycache__/
+/bridge/**/*.pyc
+/mobile/private-config.js
+/mobile/private-config.local.js
+/chord-mobile/private-config.js
+/chord-dist/
+/chord-android/.gradle/
+/chord-android/app/build/
+/chord-android/app/src/main/assets/public/
+/chord-android/app/src/chord/
+/android/.gradle/
+/android/app/build/
+# Large optional speech-recognition models; download them separately.
+/android/app/src/main/assets/sherpa-onnx-*/
+/android/app/src/main/assets/itn_zh_number.fst

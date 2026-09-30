@@ -1,0 +1,68 @@
+:root:not(.chord){--e-bg:#08080b;--e-panel:#121117;--e-line:#ffffff0d;--e-text:#f5f3f7;--e-muted:#77727f;--e-violet:#9a7cf4;--tap:140ms;--ui:220ms;--page:380ms}
+:root:not(.chord) body{background:var(--e-bg)}
+:root:not(.chord) .primary{background:linear-gradient(125deg,#d9ccfa,#a58ae9 52%,#795bd0);color:#17121d;box-shadow:0 14px 38px #7255cb2c,inset 0 1px #fff8;transition:transform var(--tap),filter var(--ui),box-shadow var(--ui)}
+:root:not(.chord) .hero h1 em{background:linear-gradient(100deg,#d7ceef,#b29ce9 55%,#9579df);-webkit-background-clip:text;color:transparent}
+:root:not(.chord) .progress i{background:linear-gradient(90deg,#c9b8f2,#8c6cdd)}
+:root:not(.chord) .choices button.selected{border-color:#9b7cff75;background:linear-gradient(145deg,#9b7cff18,#ffffff02)}
+:root:not(.chord) .wechat-chat{background:radial-gradient(80% 45% at 50% -8%,#8568d411,transparent 74%),linear-gradient(180deg,#0b0a0e,#08080b 62%)}
+:root:not(.chord) .wechat-chat{height:100dvh}
+:root:not(.chord) .wechat-chat:after{opacity:.09;background-size:56px 56px}
+:root:not(.chord) .wechat-chat .chathead{height:68px;flex-basis:68px;gap:10px;padding:10px 12px;border-bottom:1px solid var(--e-line);background:#0b0a0ed9;box-shadow:0 8px 30px #0002;backdrop-filter:blur(28px) saturate(125%)}
+:root:not(.chord) .wechat-chat .chathead>button:first-child{width:38px!important;height:38px;border:0;border-radius:13px;background:transparent;font-size:29px}
+:root:not(.chord) .wechat-chat .chat-avatar{width:43px;height:43px}
+:root:not(.chord) .wechat-chat .chat-avatar>i{width:43px;height:43px;border-radius:50%;view-transition-name:active-agent-avatar;background:radial-gradient(circle at 32% 24%,#fff 0 4%,#d8c9ff 13%,hsl(var(--agent-h) 76% 61%) 49%,#29134f 100%);box-shadow:inset -7px -8px 14px #1d0b4788,0 0 16px hsl(var(--agent-h) 80% 64%/.38)}
+:root:not(.chord) .wechat-chat .chat-avatar>i:after{content:"";position:absolute;inset:-5px;border:1px solid hsl(var(--agent-h) 80% 75%/.22);border-radius:50%;animation:chatCoreBreath 4.8s ease-in-out infinite}
+:root:not(.chord) .wechat-chat .chathead>span b{font-size:15px;font-weight:610}
+:root:not(.chord) .wechat-chat .chathead>span small{margin-top:3px;color:#6e6875;font-size:9px;letter-spacing:0}
+:root:not(.chord) .wechat-chat .call-button,:root:not(.chord) .wechat-chat .chat-more{width:38px!important;height:38px;flex-basis:38px;border:0;border-radius:13px;background:transparent;color:#aaa3b1}
+:root:not(.chord) .wechat-chat .msgs{gap:9px;padding:18px 13px calc(88px + env(safe-area-inset-bottom));scroll-behavior:smooth;overflow-anchor:auto}
+:root:not(.chord) .wechat-chat .message-wrap{max-width:84%;gap:7px;animation:messageArrive var(--page) cubic-bezier(.2,.82,.2,1)}
+:root:not(.chord) .wechat-chat .message-wrap.user{max-width:80%}
+:root:not(.chord) .message-avatar{width:25px;height:25px;border-radius:50%;background:radial-gradient(circle at 32% 25%,#fff,#bdaaf5 20%,#7055c8 68%);box-shadow:0 0 14px #8567df3d}
+:root:not(.chord) .wechat-chat .msg{padding:11px 13px 8px;font-size:14px;line-height:1.58;backdrop-filter:blur(20px);transition:transform var(--tap),border-color var(--ui),background var(--ui)}
+:root:not(.chord) .wechat-chat .msg.assistant{border:1px solid #ffffff0b;border-radius:4px 17px 17px 17px;background:linear-gradient(145deg,#1a1820e8,#121117ed);box-shadow:inset 0 1px #ffffff07,0 8px 25px #0002}
+:root:not(.chord) .wechat-chat .msg.user{border:1px solid #b9a5ee22;border-radius:17px 17px 4px 17px;background:linear-gradient(145deg,#7760b9,#5d4799);box-shadow:inset 0 1px #ffffff26,0 10px 26px #49317f24}
+:root:not(.chord) .message-time{display:block;margin-top:3px;color:#ffffff57;font-size:7px;font-weight:450;line-height:1;text-align:right}
+:root:not(.chord) .voice-message-mark{height:17px;display:flex;align-items:center;gap:2px;margin-bottom:5px;color:#e4dafb}:root:not(.chord) .voice-message-mark i{width:2px;height:5px;border-radius:2px;background:currentColor;animation:voiceMark 1s ease-in-out infinite}:root:not(.chord) .voice-message-mark i:nth-child(2){height:10px;animation-delay:-.2s}:root:not(.chord) .voice-message-mark i:nth-child(3){height:14px;animation-delay:-.4s}:root:not(.chord) .voice-message-mark i:nth-child(4){height:9px;animation-delay:-.6s}:root:not(.chord) .voice-message-mark i:nth-child(5){animation-delay:-.8s}:root:not(.chord) .voice-message-mark b{margin-left:5px;font-size:7px;font-weight:500;opacity:.62}
+:root:not(.chord) .chat-time{align-self:center;margin:7px 0 5px;color:#5e5965;font-size:8px;font-weight:520;letter-spacing:.06em}
+:root:not(.chord) .thinking-state{align-self:flex-start;min-width:0;margin-left:32px;padding:5px 9px 5px 5px;border:1px solid #ffffff0a;border-radius:999px;background:#121117d9;box-shadow:none}
+:root:not(.chord) .thinking-state .thinking-core{width:25px;height:25px;display:grid!important;place-items:center;border-radius:50%;background:radial-gradient(circle at 31% 25%,#fff,#bba8f6 20%,#7257cd 68%)!important;color:#24163b;font-size:8px;font-style:normal;font-weight:800;box-shadow:0 0 0 0 #9576eb55;animation:thinkingBreath 1.8s ease-in-out infinite}
+:root:not(.chord) .thinking-state span{color:#8b8591;font-size:8px}
+:root:not(.chord) .thinking-state span:after{content:"";width:15px;height:3px;margin-left:6px;display:inline-block;background:radial-gradient(circle,#a990ee 1px,transparent 2px) 0 0/5px 3px;animation:thinkingDots 1.2s steps(3) infinite}
+:root:not(.chord) .thinking-state button{padding:4px 7px;border:0;background:transparent;color:#806f78;font-size:7px}
+:root:not(.chord) .wechat-chat #send{position:fixed!important;z-index:45;left:0;right:0;bottom:0;width:100%;min-height:66px;display:flex!important;flex:0 0 auto;gap:8px;align-items:flex-end;padding:9px 10px max(10px,env(safe-area-inset-bottom));border:0;background:linear-gradient(180deg,#09080bd9,#09080bf5 32%);box-shadow:0 -10px 34px #0004;backdrop-filter:blur(30px) saturate(125%);overflow:visible;contain:layout style}
+:root:not(.chord) .composer{position:relative;display:block!important;visibility:visible!important;flex:1 1 auto;min-width:80px;min-height:46px;border:1px solid #ffffff16;border-radius:20px;background:linear-gradient(145deg,#1a181f,#121116);box-shadow:inset 0 1px #ffffff0a;overflow:hidden;transition:border-color var(--ui),box-shadow var(--ui)}
+:root:not(.chord) .composer:focus-within{border-color:#a78df34c;box-shadow:0 0 0 3px #9e80ef0a,inset 0 1px #ffffff0b}
+:root:not(.chord) .composer-glow{position:absolute;pointer-events:none;inset:auto 18% -1px 18%;height:1px;background:linear-gradient(90deg,transparent,#a58bef,transparent);opacity:0;transition:opacity var(--ui)}
+:root:not(.chord) .composer:focus-within .composer-glow{opacity:.75}
+:root:not(.chord) .wechat-chat #send textarea{display:block!important;visibility:visible!important;opacity:1!important;width:100%!important;height:auto;min-height:46px!important;max-height:116px;padding:13px 15px!important;border:0!important;border-radius:0;background:transparent!important;color:#f5f3f7!important;box-shadow:none!important;resize:none;overflow-y:auto;line-height:20px}
+:root:not(.chord) .wechat-chat #send textarea:focus{border:0;box-shadow:none}
+:root:not(.chord) .voice-input,:root:not(.chord) .send-morph{flex:0 0 46px!important;width:46px!important;height:46px!important;align-self:flex-end;padding:0!important;border-radius:50%!important;transition:transform var(--tap),opacity var(--ui),background var(--ui),box-shadow var(--ui)!important}
+:root:not(.chord) .voice-input{display:grid!important;visibility:visible!important;place-items:center;border:1px solid #ffffff16!important;background:#19171e!important;color:#c4bdcb!important;box-shadow:inset 0 1px #ffffff0a!important}
+:root:not(.chord) .voice-input>i{position:relative;width:8px;height:18px;border:2px solid currentColor;border-radius:7px}
+:root:not(.chord) .voice-input>i:after{content:"";position:absolute;left:-6px;top:8px;width:16px;height:10px;border:2px solid currentColor;border-top:0;border-radius:0 0 10px 10px}
+:root:not(.chord) .voice-input.listening{color:#f0eaff;background:#7558c8;box-shadow:0 0 22px #7659d86b;animation:voiceButtonPulse 1.2s ease-in-out infinite}
+:root:not(.chord) .send-morph{border:1px solid #d8ccfb4a!important;background:radial-gradient(circle at 32% 25%,#ddd2fa,#9b80e6 38%,#7255c9 78%)!important;box-shadow:inset 0 1px #fff8,0 8px 22px #6144b037!important;transform:scale(.86);opacity:.55}
+:root:not(.chord) #send.has-text .send-morph{transform:scale(1);opacity:1}
+:root:not(.chord) .recording-sheet{position:absolute;z-index:8;left:50%;bottom:calc(76px + env(safe-area-inset-bottom));width:220px;padding:21px 18px 16px;border:1px solid #ffffff12;border-radius:24px;background:#17141ee8;box-shadow:0 25px 70px #0009;backdrop-filter:blur(28px);text-align:center;transform:translateX(-50%);animation:recordingIn var(--ui) cubic-bezier(.2,.8,.2,1)}
+:root:not(.chord) .recording-sheet[hidden]{display:none}
+:root:not(.chord) .recording-sheet>i{width:48px;height:48px;display:block;margin:0 auto 12px;border-radius:50%;background:radial-gradient(circle at 35% 27%,#fff,#bba6f6 18%,#7153c9 70%);box-shadow:0 0 0 8px #9878ee0c,0 0 30px #8d6de45c;animation:thinkingBreath 1.5s ease-in-out infinite}
+:root:not(.chord) .recording-sheet b,:root:not(.chord) .recording-sheet span{display:block}:root:not(.chord) .recording-sheet b{font-size:14px}:root:not(.chord) .recording-sheet span{margin-top:5px;color:#77717f;font-size:9px}:root:not(.chord) .recording-sheet button{margin-top:14px;padding:7px 18px;border:0;border-radius:999px;background:#ffffff09;color:#aaa3af;font-size:9px}
+:root:not(.chord) .voice-pill{align-self:flex-start;margin-left:32px;border:1px solid #ffffff0a;background:#121117d9;box-shadow:none}
+:root:not(.chord) .voice-pill .voice-wave i{background:#a58aef}
+:root:not(.chord) .library .agent-open>i{border-radius:50%;box-shadow:inset -8px -9px 16px #1a074e7a,0 0 18px hsl(var(--agent-h) 80% 62%/.3);animation:libraryCoreBreath 5.6s calc(var(--delay)*-1) ease-in-out infinite}
+:root:not(.chord) .library .agent{transition:transform var(--ui),border-color var(--ui),background var(--ui)}
+:root:not(.chord) .library .agent:active{transform:scale(.985)}
+:root:not(.chord) .home .living-core{filter:saturate(.96);box-shadow:inset -18px -20px 34px #1905509c,inset 12px 10px 27px #fff5,0 0 24px #d2c1ff,0 0 64px #8c63ff9b,0 0 112px #6034ed4e}
+:root:not(.chord)::view-transition-old(root),:root:not(.chord)::view-transition-new(root){animation-duration:var(--page);animation-timing-function:cubic-bezier(.2,.78,.2,1)}
+:root:not(.chord)[data-nav-direction="forward"]::view-transition-old(root){animation-name:pageOldForward}:root:not(.chord)[data-nav-direction="forward"]::view-transition-new(root){animation-name:pageNewForward}
+:root:not(.chord)[data-nav-direction="back"]::view-transition-old(root){animation-name:pageOldBack}:root:not(.chord)[data-nav-direction="back"]::view-transition-new(root){animation-name:pageNewBack}
+::view-transition-group(active-agent-avatar){animation-duration:420ms;animation-timing-function:cubic-bezier(.2,.8,.2,1)}
+@keyframes pageOldForward{to{opacity:0;transform:translateX(-18px) scale(.99)}}@keyframes pageNewForward{from{opacity:0;transform:translateX(24px) scale(.99)}}
+@keyframes pageOldBack{to{opacity:0;transform:translateX(18px) scale(.99)}}@keyframes pageNewBack{from{opacity:0;transform:translateX(-24px) scale(.99)}}
+@keyframes messageArrive{from{opacity:0;transform:translateY(9px) scale(.985)}}@keyframes chatCoreBreath{50%{transform:scale(1.08);opacity:.48;box-shadow:0 0 18px hsl(var(--agent-h) 80% 70%/.3)}}
+@keyframes libraryCoreBreath{50%{filter:brightness(1.08);box-shadow:inset -8px -9px 16px #1a074e70,0 0 25px hsl(var(--agent-h) 80% 65%/.4)}}
+@keyframes thinkingBreath{50%{transform:scale(1.08);box-shadow:0 0 0 7px #9576eb0b,0 0 22px #9576eb45}}@keyframes thinkingDots{50%{opacity:.25}}
+@keyframes voiceButtonPulse{50%{transform:scale(.94);box-shadow:0 0 30px #8768e184}}@keyframes recordingIn{from{opacity:0;transform:translate(-50%,12px) scale(.96)}}
+@keyframes voiceMark{50%{transform:scaleY(.55);opacity:.55}}
+@media(prefers-reduced-motion:reduce){:root:not(.chord) *{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important}}

@@ -1,0 +1,5 @@
+Vosk Chinese small model 0.22
+Source: https://alphacephei.com/vosk/models
+License: Apache License 2.0
+
+The model is redistributed with Echo solely for on-device speech recognition.

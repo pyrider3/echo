@@ -1,0 +1,16 @@
+/* Echo v0.5 visual system is consolidated in style.css. */
+.training-state{box-sizing:border-box;display:flex;flex-direction:column;align-items:center;justify-content:center;width:100%;max-width:none;min-height:220px;margin:18px 0;padding:24px 20px;border:1px solid rgba(174,145,255,.2);border-radius:24px;background:linear-gradient(145deg,rgba(151,112,255,.12),rgba(255,255,255,.035));text-align:center;box-shadow:inset 0 1px rgba(255,255,255,.08);overflow-anchor:none}
+.wizard{overflow-anchor:none}
+.wizard .panel{transform:translateZ(0);backface-visibility:hidden}
+.training-state small{display:block;margin-top:12px;color:#9e8bc9;letter-spacing:.22em;font-size:10px}
+.training-state h3{margin:7px 0 4px;color:#f7f3ff;font-size:16px}
+.training-state p{width:100%;max-width:420px;margin:0 auto;color:#8f889d;font-size:12px;line-height:1.6}
+.training-orbit{position:relative;width:58px;height:58px;margin:auto;border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle at 35% 28%,#fff 0 4%,#d8bdff 10%,#7d3cff 42%,#190d3e 75%);box-shadow:0 0 32px rgba(141,81,255,.55)}
+.training-orbit i{position:absolute;inset:-7px;border:1px solid rgba(185,151,255,.32);border-radius:50%;animation:training-spin 3.6s linear infinite}
+.training-orbit i:nth-child(2){inset:-12px;border-style:dashed;animation-direction:reverse;animation-duration:5.2s}
+.training-orbit b{position:relative;color:#fff;font-size:18px}
+.training-state.status-training .training-orbit,.training-state.status-queued .training-orbit{animation:training-breathe 1.8s ease-in-out infinite}
+.training-state.status-failed{border-color:rgba(255,115,137,.3);background:rgba(120,35,54,.12)}
+.training-state.status-failed .training-orbit{filter:saturate(.45)}
+@keyframes training-spin{to{transform:rotate(360deg)}}
+@keyframes training-breathe{50%{transform:scale(1.08);box-shadow:0 0 48px rgba(141,81,255,.75)}}

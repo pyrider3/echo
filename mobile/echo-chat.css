@@ -1,0 +1,79 @@
+:root:not(.chord) .wechat-chat{position:relative;isolation:isolate;background:#07070b;color:#f7f5fb}
+:root:not(.chord) .wechat-chat:before{content:"";position:absolute;z-index:-1;inset:0;background:radial-gradient(70% 38% at 18% 4%,#8264db18,transparent 72%),radial-gradient(55% 34% at 96% 68%,#e69a7310,transparent 75%),linear-gradient(180deg,#0b0a10,#07070b)}
+:root:not(.chord) .wechat-chat:after{content:"";position:absolute;z-index:-1;inset:0;opacity:.17;background-image:linear-gradient(#ffffff05 1px,transparent 1px),linear-gradient(90deg,#ffffff05 1px,transparent 1px);background-size:42px 42px;mask-image:linear-gradient(#000,transparent 70%)}
+:root:not(.chord) .wechat-chat .chathead{height:82px;flex-basis:82px;padding:13px 15px;border:0;background:linear-gradient(180deg,#0a090edb,#09080dc7);box-shadow:0 1px #ffffff0b;backdrop-filter:blur(32px) saturate(135%)}
+:root:not(.chord) .wechat-chat .chathead>button:first-child{width:42px!important;height:42px;border:1px solid #ffffff0e;border-radius:15px;background:#ffffff04;color:#ddd6e8;font-size:27px;transition:.2s}
+:root:not(.chord) .wechat-chat .chat-avatar{width:47px;height:47px}:root:not(.chord) .wechat-chat .chat-avatar>i{width:47px;height:47px;border:1px solid #eee5ff55;border-radius:17px;background:radial-gradient(circle at 31% 24%,#fff 0 3%,#d7c5ff 13%,#8765e7 48%,#2b165f 100%);color:#180c2a;box-shadow:inset 0 1px #fff8,0 0 22px #8d6aee52}
+:root:not(.chord) .wechat-chat .chathead>span{text-align:left}:root:not(.chord) .wechat-chat .chathead>span b{color:#fff;font-size:16px;font-weight:670;letter-spacing:.01em}:root:not(.chord) .wechat-chat .chathead>span small{margin-top:5px;color:#827a8d;font-size:9px;letter-spacing:.04em}
+:root:not(.chord) .wechat-chat .call-button,:root:not(.chord) .wechat-chat .chat-more{width:42px!important;height:42px;flex:0 0 42px;border:1px solid #ffffff10;border-radius:15px;background:#ffffff05;color:#c8bed5;font-size:15px;transition:transform .18s,background .18s}:root:not(.chord) .wechat-chat .call-button:active,:root:not(.chord) .wechat-chat .chat-more:active{transform:scale(.9);background:#9d7cff18}
+:root:not(.chord) .wechat-chat .msgs{gap:17px;padding:24px 15px 28px;background:transparent;scrollbar-width:none}:root:not(.chord) .wechat-chat .msgs::-webkit-scrollbar{display:none}
+:root:not(.chord) .wechat-chat .message-wrap{position:relative;max-width:88%;display:grid;grid-template-columns:auto 1fr;align-items:end;gap:8px;animation:echoMessage .4s cubic-bezier(.2,.82,.2,1)}:root:not(.chord) .wechat-chat .message-wrap.user{display:flex;max-width:82%}
+:root:not(.chord) .message-avatar{width:27px;height:27px;display:grid;place-items:center;border:1px solid #ffffff1c;border-radius:10px;background:linear-gradient(145deg,#a990f3,#6348bc);color:#160d23;font-style:normal;font-size:10px;font-weight:800;box-shadow:0 6px 18px #0005}
+:root:not(.chord) .wechat-chat .msg{max-width:100%;padding:12px 15px;border:0;color:#eeeaf3;font-size:14px;line-height:1.65;box-shadow:none;backdrop-filter:blur(18px)}
+:root:not(.chord) .wechat-chat .msg.assistant{border:1px solid #ffffff0d;border-radius:5px 19px 19px 19px;background:linear-gradient(145deg,#201d28d9,#141219e8);box-shadow:inset 0 1px #ffffff08,0 13px 34px #0003}
+:root:not(.chord) .wechat-chat .msg.user{border:1px solid #c5afff29;border-radius:19px 19px 5px 19px;background:linear-gradient(135deg,#9d81ef 0%,#7559d6 72%,#6448be);color:#fff;box-shadow:inset 0 1px #ffffff40,0 12px 34px #6e50ca35}
+:root:not(.chord) .wechat-chat .generation-status{border-color:#9d7cff24;background:#121017dc}:root:not(.chord) .wechat-chat .voice-pill{border-color:#9d7cff24;background:#121017dc}
+:root:not(.chord) .wechat-chat #send{position:relative;gap:8px;padding:11px 12px calc(12px + env(safe-area-inset-bottom));border:0;background:#09080dc7;box-shadow:0 -1px #ffffff0a;backdrop-filter:blur(30px) saturate(130%)}
+:root:not(.chord) .wechat-chat #send textarea{min-height:50px;padding:14px 16px;border:1px solid #ffffff11;border-radius:19px;background:linear-gradient(145deg,#18151f,#111017);color:#f5f1f8;box-shadow:inset 0 1px #ffffff08;transition:.2s}:root:not(.chord) .wechat-chat #send textarea:focus{border-color:#9d7cff55;box-shadow:0 0 0 3px #9d7cff0e,inset 0 1px #ffffff0b}
+:root:not(.chord) .wechat-chat #send button[type=submit]{width:50px;height:50px;padding:0;border:1px solid #e2d8ff74;border-radius:18px;background:radial-gradient(circle at 32% 25%,#e7dcff,#a98df5 32%,#7859dd 75%);color:#1a0e29;font-size:0;box-shadow:inset 0 1px #fff9,0 10px 28px #7658d94a;transition:.2s}:root:not(.chord) .wechat-chat #send button[type=submit]:after{content:"↑";font-size:22px;font-weight:800}:root:not(.chord) .wechat-chat #send button[type=submit]:active{transform:translateY(2px) scale(.93)}
+:root:not(.chord) .wechat-chat .mute-once{height:50px!important;border:1px solid #ffffff11!important;border-radius:17px!important;background:#15131b!important;color:#998fac!important}
+:root:not(.chord) .wechat-call{padding:calc(28px + env(safe-area-inset-top)) 28px calc(44px + env(safe-area-inset-bottom));background:#17191d;color:#fff;animation:callEnter .3s ease-out}
+:root:not(.chord) .wechat-call .call-backdrop{position:absolute;inset:-30px;background:linear-gradient(180deg,#25272b66,#121317e8),radial-gradient(80% 55% at 50% 16%,#7a718077,transparent 72%);filter:saturate(.65)}
+:root:not(.chord) .wechat-call .call-backdrop:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,#0b0c0e33 0%,#0b0c0e88 52%,#08090bcc 100%);backdrop-filter:blur(22px)}
+:root:not(.chord) .wechat-call .call-minimize{position:absolute;z-index:2;top:calc(18px + env(safe-area-inset-top));left:18px;width:44px;height:44px;border:0;background:transparent;color:#fff;font-size:38px;font-weight:200;line-height:1}
+:root:not(.chord) .wechat-call .call-person{position:relative;z-index:1;display:flex;flex-direction:column;align-items:center;width:100%;margin-top:10vh}
+:root:not(.chord) .wechat-call .call-avatar{width:112px;height:112px;border:1px solid #ffffff4a;border-radius:16px;background:radial-gradient(circle at 31% 24%,#eee 0 3%,#cab9ed 15%,#7962ac 55%,#3b3153);color:#16131b;font-size:40px;box-shadow:0 18px 48px #0007,inset 0 1px #fff9}
+:root:not(.chord) .wechat-call h2{margin:24px 0 10px;font-size:27px;font-weight:520;letter-spacing:.02em}
+:root:not(.chord) .wechat-call p{min-height:22px;color:#d0d1d4;font-size:15px}
+:root:not(.chord) .wechat-call .call-wave{height:32px;margin-top:13px;gap:4px;opacity:.75}
+:root:not(.chord) .wechat-call .call-wave i{width:2px;max-height:20px;background:#d9dadd;animation-duration:1.15s}
+:root:not(.chord) .wechat-call .call-actions{position:relative;z-index:2;display:grid;grid-template-columns:1fr 1fr 1fr;align-items:start;width:min(100%,360px);margin-top:auto}
+:root:not(.chord) .wechat-call .call-actions button{justify-self:center;display:flex;flex-direction:column;align-items:center;gap:13px;width:88px;border:0;background:transparent;color:#f5f5f6;font-size:13px}
+:root:not(.chord) .wechat-call .call-actions button>i{position:relative;display:block;width:64px;height:64px;border-radius:50%;background:#ffffff24;backdrop-filter:blur(12px);transition:transform .16s,background .16s}
+:root:not(.chord) .wechat-call .call-actions button:active>i{transform:scale(.9)}
+:root:not(.chord) .wechat-call .call-tool.active>i{background:#f0f0f2}
+:root:not(.chord) .wechat-call .mute-icon:before{content:"";position:absolute;left:29px;top:18px;width:7px;height:19px;border-radius:7px;background:#fff;box-shadow:0 15px 0 -2px #fff}
+:root:not(.chord) .wechat-call .mute-icon:after{content:"";position:absolute;left:24px;top:27px;width:17px;height:13px;border:2px solid #fff;border-top:0;border-radius:0 0 12px 12px}
+:root:not(.chord) .wechat-call .active .mute-icon:before{background:#26282d;box-shadow:0 15px 0 -2px #26282d}
+:root:not(.chord) .wechat-call .active .mute-icon:after{border-color:#26282d}
+:root:not(.chord) .wechat-call .speaker-icon:before{content:"";position:absolute;left:18px;top:27px;width:12px;height:12px;background:#fff}
+:root:not(.chord) .wechat-call .speaker-icon:after{content:"";position:absolute;left:28px;top:21px;width:18px;height:24px;background:#fff;clip-path:polygon(0 28%,100% 0,100% 100%,0 72%)}
+:root:not(.chord) .wechat-call .active .speaker-icon:before,:root:not(.chord) .wechat-call .active .speaker-icon:after{background:#26282d}
+:root:not(.chord) .wechat-call .hangup{margin:0;width:88px;height:auto;border-radius:0;transform:none;font-size:13px;box-shadow:none}
+:root:not(.chord) .wechat-call .hangup>i{background:#ed4d4d}
+:root:not(.chord) .wechat-call .hangup>i:before,:root:not(.chord) .wechat-call .hangup>i:after{content:"";position:absolute;left:20px;top:29px;width:25px;height:7px;border-radius:7px;background:#fff;transform:rotate(45deg)}
+:root:not(.chord) .wechat-call .hangup>i:after{transform:rotate(-45deg)}
+:root:not(.chord) .wechat-call .hangup span{position:static;width:auto;transform:none;color:#f5f5f6;font-size:13px}
+:root:not(.chord) .wechat-call.leaving{pointer-events:none;animation:callLeave .22s ease-in forwards}
+:root:not(.chord) .wechat-chat button{-webkit-tap-highlight-color:transparent;touch-action:manipulation}
+:root:not(.chord) .wechat-chat .chathead,:root:not(.chord) .wechat-chat #send{transform:translateZ(0);will-change:transform;contain:paint}
+:root:not(.chord) .wechat-chat .message-wrap{content-visibility:auto;contain-intrinsic-size:52px;transform:translateZ(0)}
+:root:not(.chord) .wechat-chat .msg{transition:border-color .22s ease,background .22s ease,transform .18s ease}
+:root:not(.chord) .wechat-chat .msg:active{transform:scale(.985)}
+:root:not(.chord) .wechat-chat .call-button,:root:not(.chord) .wechat-chat .chat-more,:root:not(.chord) .wechat-chat .mute-once{will-change:transform}
+:root:not(.chord) .wechat-chat #send button[type=submit]{will-change:transform,filter}
+:root:not(.chord) .wechat-chat #send button[type=submit]:hover{filter:brightness(1.06)}
+:root:not(.chord) .wechat-call .call-actions button>i{box-shadow:inset 0 1px #ffffff28,0 12px 28px #0003}
+:root:not(.chord) .wechat-call .call-tool.active>i{box-shadow:inset 0 1px #fff,0 0 0 5px #ffffff0b,0 14px 34px #0004}
+@keyframes callLeave{to{opacity:0;transform:scale(.985)}}
+@keyframes echoMessage{from{opacity:0;transform:translateY(12px) scale(.975)}}
+/* Shared-life album, media composer and more human group rhythm */
+.album-lead{margin:0 7vw 26px;color:var(--muted);font-size:14px;line-height:1.6}
+.album-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;padding:0 6vw 42px}
+.album-grid article{position:relative;min-height:210px;border-radius:24px;overflow:hidden;background:var(--surface);box-shadow:0 14px 38px rgba(39,26,74,.1)}
+.album-grid article img{width:100%;height:210px;object-fit:cover;display:block}
+.album-grid article span{display:flex;flex-direction:column;gap:3px;padding:13px 14px 15px}
+.album-grid article b{font-size:14px;line-height:1.35;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.album-grid article small{color:var(--muted);font-size:11px}
+.album-empty{grid-column:1/-1;padding:52px 24px;text-align:center;border:1px dashed color-mix(in srgb,var(--muted) 28%,transparent);border-radius:26px;color:var(--muted)}
+.album-empty b{display:block;color:var(--text);font-size:18px;margin-bottom:8px}
+.group-image-preview{position:fixed;z-index:23;left:18px;bottom:86px;width:104px;height:104px;padding:5px;border-radius:20px;background:var(--surface);box-shadow:0 12px 34px rgba(30,20,60,.22)}
+.group-image-preview img{width:100%;height:100%;border-radius:16px;object-fit:cover}
+.group-image-preview button{position:absolute;right:-6px;top:-7px;width:27px;height:27px;border:0;border-radius:50%;background:#28242e;color:white;font-size:18px}
+.group-image-attach{display:grid;place-items:center;flex:0 0 44px;height:44px;border-radius:15px;background:color-mix(in srgb,var(--accent) 11%,var(--surface));color:var(--accent);font-size:26px;font-weight:300}
+.group-image-attach input{display:none}
+.group-message-image{display:block;width:min(58vw,280px);max-height:330px;object-fit:cover;border-radius:18px;margin:6px 0 8px}
+.group-reply-to{display:block;padding:7px 9px;margin:1px 0 7px;border-left:2px solid color-mix(in srgb,var(--accent) 65%,transparent);border-radius:6px;background:color-mix(in srgb,var(--accent) 7%,transparent);color:var(--muted);font-size:11px;font-style:normal}
+.group-typing{animation:groupTypingIn .24s cubic-bezier(.2,.8,.2,1) both}
+@keyframes groupTypingIn{from{opacity:0;transform:translateY(8px) scale(.97)}to{opacity:1;transform:none}}
+@media(max-width:360px){.album-grid{grid-template-columns:1fr}.album-grid article img{height:260px}}
